@@ -17,5 +17,5 @@ document.getElementById('addressInput').onsubmit = e => {
             }            
         })
     })
-}
+};
 
