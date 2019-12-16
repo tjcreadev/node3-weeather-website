@@ -3,7 +3,7 @@ document.getElementById('addressInput').onsubmit = e => {
 
     const search = e.target[0].value;
 
-    fetch('./weather?address=' + search).then(response => {
+    fetch('/weather?address=' + search).then(response => {
         response.json().then(data => {
             if (data.error) {
                 document.getElementById('error').innerHTML = data.error;
